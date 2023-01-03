@@ -8,13 +8,15 @@ const Header = () => {
   return (
     <StyledHeader>
       <img src={Logo} />
-      <StyledUl>
-        <li>Produtos</li>
-        <li>Nosso Projetos</li>
-        <li>A Global Sonic</li>
-        <li>Dúvidas</li>
-        <li>Contato</li>
-      </StyledUl>  
+      <nav>
+        <StyledUl>
+          <li>Produtos</li>
+          <li>Nosso Projetos</li>
+          <li>A Global Sonic</li>
+          <li>Dúvidas</li>
+          <li>Contato</li>
+        </StyledUl>  
+      </nav>
     </StyledHeader>
   );
 };
