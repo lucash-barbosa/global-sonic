@@ -7,7 +7,7 @@ import 'normalize.css';
 const Header = () => {
   return (
     <StyledHeader>
-      <img src={Logo} />
+      <img src={Logo} alt='Logo da Global Sonic' />
       <nav>
         <StyledUl>
           <li>Produtos</li>
