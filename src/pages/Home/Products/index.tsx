@@ -15,12 +15,12 @@ import {
   SmallProductSubtitle,
 } from './styles';
 
-import Wide1 from '../../../assets/images/wide_product-1.png';
-import Wide2 from '../../../assets/images/wide_product-2.png';
-import Small1 from '../../../assets/images/small-1.png';
-import Small2 from '../../../assets/images/small-2.png';
-import Small3 from '../../../assets/images/small-3.png';
-import Small4 from '../../../assets/images/small-4.png';
+import Wide1 from '../../../assets/images/products/wide-1.png';
+import Wide2 from '../../../assets/images/products/wide-2.png';
+import Small1 from '../../../assets/images/products/small-1.png';
+import Small2 from '../../../assets/images/products/small-2.png';
+import Small3 from '../../../assets/images/products/small-3.png';
+import Small4 from '../../../assets/images/products/small-4.png';
 
 const Products = () => {
   return (
