@@ -6,10 +6,10 @@ type Props = {
   onClick?: () => void;
 }
 
-const Button = ({ onClick, text }: Props) => {
+const ButtonCoquelicot = ({ onClick, text }: Props) => {
   return (
     <StyledButton onClick={onClick}>{ text }</StyledButton>
   );
 };
 
-export default Button;
+export default ButtonCoquelicot;
