@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-  StyledDiv,
-  StyledDivIcons,
+  Wrapper,
+  WrapperIcons,
   StyledImg,
   StyledSubtitle,
   StyledTitle,
@@ -16,7 +16,7 @@ import Instagram from '../../../assets/icons/instagram.svg';
 
 const Contact = () => {
   return (
-    <StyledDiv>
+    <Wrapper>
       <StyledImg src={Logo} alt="Logo da Global Sonic" />
       <div>
         <StyledTitle>Bumenau</StyledTitle>
@@ -46,7 +46,7 @@ const Contact = () => {
       </div>
       <div>
         <StyledSubtitle>Siga a gente</StyledSubtitle>
-        <StyledDivIcons>
+        <WrapperIcons>
           <a
             href="https://pt-br.facebook.com/globalsonic/"
             target="_blank"
@@ -67,9 +67,9 @@ const Contact = () => {
           <a href="https://www.instagram.com/globalsonicoficial/?hl=pt" target="_blank" rel="noreferrer">
             <img src={Instagram} alt="Link do Instagram " />
           </a>
-        </StyledDivIcons>
+        </WrapperIcons>
       </div>
-    </StyledDiv>
+    </Wrapper>
   );
 };
 

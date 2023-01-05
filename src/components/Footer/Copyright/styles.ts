@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledDiv = styled.div`
+export const Wrapper = styled.div`
   text-align: center;
   padding: 10px 0;
   background-color: ${({theme}) => theme.colors.gunmetal};

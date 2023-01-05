@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyledUl, StyledDiv, StyledTitle } from './styles';
+import { StyledUl, Wrapper, StyledTitle } from './styles';
 
 export const Shortcuts = () => {
   return (
-    <StyledDiv>
+    <Wrapper>
       <div>
         <StyledTitle>Produtos</StyledTitle>
         <StyledUl>
@@ -34,7 +34,7 @@ export const Shortcuts = () => {
       <div>
         <StyledTitle>Contato</StyledTitle>
       </div>
-    </StyledDiv>
+    </Wrapper>
   );
 };
 export default Shortcuts;

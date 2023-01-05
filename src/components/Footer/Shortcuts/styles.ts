@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledDiv = styled.div`
+export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr .7fr 1fr;
   padding: 3% 30% 1% 7%;

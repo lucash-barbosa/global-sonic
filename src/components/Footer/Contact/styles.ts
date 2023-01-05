@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledDiv = styled.div`
+export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 30px 7% 10px 7%;
@@ -11,6 +11,19 @@ export const StyledDiv = styled.div`
     grid-template-columns: 1fr;
     margin: 0 auto;
     text-align: center;
+  }
+`;
+
+export const WrapperIcons = styled.div`
+  display: flex;
+  margin-top: 10px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+
+  a {
+    margin: 0 10px;
   }
 `;
 
@@ -34,6 +47,18 @@ export const StyledTitle = styled.h3`
   }
 `;
 
+export const StyledSubtitle = styled.h4`
+  font-size: 12px;
+  line-height: 15px;
+  color: ${({theme}) => theme.colors.white};
+  margin: 10% 0 0 20px;
+
+  @media (max-width: 768px) {
+    margin: 20px 0;
+  }
+`;
+
+
 export const StyledUl = styled.ul`
   max-width: 190px;
 
@@ -46,29 +71,5 @@ export const StyledUl = styled.ul`
     line-height: 15px;
     color: ${({theme}) => theme.colors.white};
     margin: 5% 0;
-  }
-`;
-
-export const StyledSubtitle = styled.h4`
-  font-size: 12px;
-  line-height: 15px;
-  color: ${({theme}) => theme.colors.white};
-  margin: 10% 0 0 20px;
-
-  @media (max-width: 768px) {
-    margin: 20px 0;
-  }
-`;
-
-export const StyledDivIcons = styled.div`
-  display: flex;
-  margin-top: 10px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
-
-  a {
-    margin: 0 10px;
   }
 `;
