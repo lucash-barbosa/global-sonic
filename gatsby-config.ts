@@ -12,6 +12,7 @@ const config: GatsbyConfig = {
   plugins: [
     'gatsby-plugin-sharp', 
     'gatsby-transformer-sharp', 
+    'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
   ]
 };
