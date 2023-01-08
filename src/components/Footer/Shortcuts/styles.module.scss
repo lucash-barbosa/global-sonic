@@ -1,42 +1,45 @@
-import styled from 'styled-components';
+@import '/src/global/styles/global';
+@import '/src/global/styles/variables';
+@import '/src/global/styles/breakpoints';
 
-export const Wrapper = styled.div`
+
+.wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr .7fr 1fr;
   padding: 3% 30% 1% 7%;
   grid-column-gap: 20px;
-  background-color: ${({theme}) => theme.colors.onyx};
+  background-color: $onyx;
 
-  @media (max-width: 768px) {
+  @media (max-width: $tablet) {
     grid-template-columns: 1fr;
     padding: 3% 7% 0 7%;
     text-align: center;
   }
-`;
+}
 
-export const StyledTitle = styled.h3`
+.title {
   font-weight: 600;
   font-size: 16px;
   line-height: 89.7%;
-  color: ${({theme}) => theme.colors.white};
+  color: $white;
   padding: 2% 0;
   width: max-content;
 
-  @media (max-width: 768px) {
+  @media (max-width: $tablet) {
     margin: 0 auto;
   }
-`;
+}
 
-export const StyledUl = styled.ul`
+.ul {
   width: max-content;
 
-  @media (max-width: 768px) {
+  @media (max-width: $tablet) {
     margin: 0 auto;
   }
 
   li {
     font-size: 14px;
     line-height: 203.2%;
-    color: ${({theme}) => theme.colors.white};
+    color: $white;
   }
-`;
+}

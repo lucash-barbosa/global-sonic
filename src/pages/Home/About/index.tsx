@@ -1,35 +1,29 @@
 import React from 'react';
-import ButtonOnyx from '../../../components/ButtonOnyx';
-import {
-  StyledSection,
-  StyledTitle,
-  StyledSubtitle,
-  WrapperImg,
-  StyledImg,
-  StyledText,
-} from './styles';
+import * as styles from './styles.module.scss';
+import Button from '../../../components/Button';
 
 import GlobalSonic from '../../../assets/images/global_sonic.png';
 
 const Products = () => {
   return (
-    <StyledSection>
-      <StyledTitle>A Global Sonic</StyledTitle>
-      <StyledSubtitle>
+    <section className={styles.section}>
+      <h2 className={styles.title}>A Global Sonic</h2>
+      <h3 className={styles.subtitle}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      </StyledSubtitle>
-      <WrapperImg>
-        <StyledImg src={GlobalSonic} alt='Pessoas conversando na empresa' />
-        <StyledText>
+      </h3>
+      <div className={styles.wrapperImg}>
+        <img className={styles.img} src={GlobalSonic} alt='Pessoas conversando na empresa' />
+        <p className={styles.text}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-        </StyledText>
-      </WrapperImg>
-      <StyledTitle>Chamada para conhecer sobre</StyledTitle>
-      <ButtonOnyx
+        </p>
+      </div>
+      <h2 className={styles.title}>Chamada para conhecer sobre</h2>
+      <Button
         onClick={() => console.log('Click')}
         text='Conheça a Global Sonic'
+        color='onyx'
       />
-    </StyledSection>
+    </section>
   );
 };
 

@@ -1,7 +1,4 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import GlobalStyle from '../../global/GlobalStyles';
-import theme from '../../global/styles/theme';
 import Footer from '../Footer';
 import Header from '../Header';
 
@@ -11,14 +8,11 @@ type Props = {
 }
 
 const Layout = ({ children }: Props) => {
-  return (
-    <ThemeProvider theme={theme} >
-      <GlobalStyle />
-      <Header />
-      <main>{ children }</main>
-      <Footer />
-    </ThemeProvider>
-  );
+  return (<>
+    <Header />
+    <main>{ children }</main>
+    <Footer />
+  </>);
 
 };
 

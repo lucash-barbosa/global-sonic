@@ -1,0 +1,76 @@
+@import '/src/global/styles/global';
+@import '/src/global/styles/variables';
+@import '/src/global/styles/breakpoints';
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px 7% 10px 7%;
+  grid-column-gap: 2%;
+  background-color: $outerScape;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.wrapper-icons {
+  display: flex;
+  margin-top: 10px;
+
+  @media (max-width: $tablet) {
+    justify-content: center;
+  }
+
+  a {
+    margin: 0 10px;
+  }
+}
+
+.img {
+  margin-top: 10px;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 89.7%;
+  color: $white;
+  margin-bottom: 4%; 
+
+  @media (max-width: $tablet) {
+    margin: 20px 0 ;
+  }
+}
+
+.subtitle {
+  font-size: 12px;
+  line-height: 15px;
+  color: $white;
+  margin: 10% 0 0 20px;
+
+  @media (max-width: $tablet) {
+    margin: 20px 0;
+  }
+}
+
+.ul {
+  max-width: 190px;
+
+  @media (max-width: $tablet) {
+    margin: 0 auto;
+  }
+
+  li, p {
+    font-size: 12px;
+    line-height: 15px;
+    color: $white;
+    margin: 5% 0;
+  }
+}

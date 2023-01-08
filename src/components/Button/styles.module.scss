@@ -1,0 +1,26 @@
+@import '/src/global/styles/global';
+@import '/src/global/styles/variables';
+
+.button {
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 89.7%;
+  padding: 18px 27px;
+};
+
+.white {
+  background-color: $white;
+  color: $onyx;
+}
+
+.coquelicot {
+  background-color: #FF3D00;
+  color: $white;
+}
+
+.onyx {
+  background-color: $onyx;
+  color: $white;
+}

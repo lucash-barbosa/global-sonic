@@ -1,0 +1,17 @@
+@import '/src/global/styles/global';
+@import '/src/global/styles/variables';
+
+.wrapper {
+  text-align: center;
+  padding: 10px 0;
+  background-color: $gunmetal;
+}
+
+.text {
+  font-size: 12px;
+  line-height: 18px;
+  color: $white;
+  strong {
+    color: $white;
+  }
+}

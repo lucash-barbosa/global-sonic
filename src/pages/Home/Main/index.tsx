@@ -1,21 +1,22 @@
 import React from 'react';
-import ButtonCoquelicot from '../../../components/ButtonCoquelicot';
-import { StyledSection, StyledSubtitle, StyledTitle, Wrapper } from './styles';
+import * as styles from './styles.module.scss';
+import Button from '../../../components/Button';
 
 const Main = () => {
   return (
-    <StyledSection>
-      <Wrapper>
-        <StyledTitle>Qualidade de ponta a ponta</StyledTitle>
-        <StyledSubtitle>
+    <section className={styles.container}>
+      <div className={styles.wrapper}>
+        <h1 className={styles.title}>Qualidade de ponta a ponta</h1>
+        <h2 className={styles.subtitle}>
           Desenvolvemos e utilizamos um sistema próprio, garantindo
-        </StyledSubtitle>
-        <ButtonCoquelicot
+        </h2>
+        <Button
           onClick={() => console.log('Click')}
           text='Conhecer Produtos'
+          color='coquelicot'
         />
-      </Wrapper>
-    </StyledSection>
+      </div>
+    </section>
   );
 };
 

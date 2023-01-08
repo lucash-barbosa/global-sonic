@@ -1,0 +1,41 @@
+@import '/src/global/styles/global';
+@import '/src/global/styles/variables';
+@import '/src/global/styles/breakpoints';
+
+.hearder {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $onyx;
+  padding: 13px 0;
+
+  @media (max-width: $tablet) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.img {
+  @media (max-width: $tablet) {
+    margin: 10px auto 30px;
+  }
+}
+
+.ul {
+  display: flex;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+
+  li {
+    color: $white;
+    font-size: 16px;
+    line-height: 89.7%;
+    margin: 0 1vw;
+
+    @media (max-width: $tablet) {
+      margin: 2vh 0;
+    }
+  }
+}

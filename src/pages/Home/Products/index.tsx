@@ -1,19 +1,8 @@
 import React from 'react';
-import ButtonOnyx from '../../../components/ButtonOnyx';
-import {
-  StyledSection,
-  Wrapper,
-  StyledTitle,
-  StyledSubtitle,
-  WrapperProducts,
-  WideProduct,
-  WideProductTitle,
-  WideProductSubtitle,
-  ProductButton,
-  SmallProduct,
-  SmallProductTitle,
-  SmallProductSubtitle,
-} from './styles';
+import Button from '../../../components/Button';
+
+import * as styles from './styles.module.scss';
+import { SmallProduct, WideProduct } from './styled';
 
 import Wide1 from '../../../assets/images/products/wide-1.png';
 import Wide2 from '../../../assets/images/products/wide-2.png';
@@ -24,58 +13,63 @@ import Small4 from '../../../assets/images/products/small-4.png';
 
 const Products = () => {
   return (
-    <StyledSection>
-      <Wrapper>
-        <StyledTitle>Nossos protudos</StyledTitle>
-        <StyledSubtitle>
+    <section className={styles.section}>
+      <div className={styles.wrapper}>
+        <h2 className={styles.title}>Nossos protudos</h2>
+        <h3 className={styles.subtitle}>
           Desenvolvemos e utilizamos um sistema próprio, garantindo
-        </StyledSubtitle>
-      </Wrapper>
+        </h3>
+      </div>
 
-      <WrapperProducts>
+      <div className={styles.wrapperProducts}>
 
         <WideProduct background={Wide1}>
-          <WideProductTitle color='white'>Acionadores Manuais</WideProductTitle>
-          <WideProductSubtitle color='white'>Linha especial</WideProductSubtitle>
-          <ProductButton color='white'>Conheça</ProductButton>
+          <h3 className={styles.productTitle__wide}>Acionadores Manuais</h3>
+          <h4 className={styles.productSubtitle__wide}>Linha especial</h4>
+          <div className={styles.wrapperButton}>
+            <Button text='Conheça' color='white' />
+          </div>
         </WideProduct>
 
         <SmallProduct background={Small1}>
-          <SmallProductTitle color='onyx'>Roteadores e sinalizadores</SmallProductTitle>
-          <SmallProductSubtitle color='onyx'>Linha especial</SmallProductSubtitle>
-          <ProductButton color='onyx'>Conheça</ProductButton>
+          <h3 className={`${styles.productTitle} ${styles.productTitle__small} ${styles.textOnyx}`}>Roteadores e sinalizadores</h3>
+          <h4 className={`${styles.productSubtitle__small} ${styles.textOnyx}`}>Linha especial</h4>
+          <div className={styles.wrapperButton}>
+            <Button text='Conheça' color='onyx' />
+          </div>
         </SmallProduct>
 
         <SmallProduct background={Small2}>
-          <SmallProductTitle color='white'>Detectores de incêndio</SmallProductTitle>
-          <SmallProductSubtitle color='white'>Linha especial</SmallProductSubtitle>
+          <h3 className={styles.productTitle__small}>Detectores de incêndio</h3>
+          <h4 className={styles.productSubtitle__small}>Linha especial</h4>
         </SmallProduct>
 
         <SmallProduct background={Small3}>
-          <SmallProductTitle color='onyx'>Detectores</SmallProductTitle>
-          <SmallProductSubtitle color='onyx'>Linha especial</SmallProductSubtitle>
+          <h3 className={`${styles.productTitle__small} ${styles.textOnyx}`}>Detectores</h3>
+          <h4 className={`${styles.productSubtitle__small} ${styles.textOnyx}`}>Linha especial</h4>
         </SmallProduct>
 
         <SmallProduct background={Small4}>
-          <SmallProductTitle color='onyx'>Detectores</SmallProductTitle>
-          <SmallProductSubtitle color='onyx'>Linha especial</SmallProductSubtitle>
+          <h3 className={`${styles.productTitle__small} ${styles.textOnyx}`}>Detectores</h3>
+          <h4 className={`${styles.productSubtitle__small} ${styles.textOnyx}`}>Linha especial</h4>
         </SmallProduct>
 
         <WideProduct background={Wide2}>
-          <WideProductTitle color='white'>Central de alarme</WideProductTitle>
-          <WideProductSubtitle color='white'>Linha especial</WideProductSubtitle>
+          <h3 className={styles.productTitle__wide}>Central de alarme</h3>
+          <h4 className={styles.productSubtitle__wide}>Linha especial</h4>
         </WideProduct>
 
-      </WrapperProducts>
+      </div>
 
-      <Wrapper>
-        <StyledTitle>Chamada para conhecer todos </StyledTitle>
-        <ButtonOnyx
+      <div className={styles.wrapper}>
+        <h2 className={styles.title}>Chamada para conhecer todos </h2>
+        <Button
           onClick={() => console.log('Click')}
           text='Conheça todas a linhas'
+          color='onyx'
         />
-      </Wrapper>
-    </StyledSection>
+      </div>
+    </section>
   );
 };
 

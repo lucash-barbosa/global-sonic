@@ -1,24 +1,25 @@
 import React from 'react';
-import { ProjectsButton, StyledSection, StyledSubtitle, StyledTitle, Wrapper, StyledImg } from './styles';
+import Button from '../../../components/Button';
+import * as styles from './styles.module.scss';
 
 import CocaIcon from '../../../assets/icons/cocacola.svg';
 
 const Projects = () => {
   return (
-    <StyledSection>
-      <Wrapper>
-        <StyledTitle>Nossos projetos</StyledTitle>
-        <StyledSubtitle>
+    <section className={styles.section}>
+      <div className={styles.wrapper}>
+        <h2 className={styles.title}>Nossos projetos</h2>
+        <p className={styles.subtitle}>
           Vale   |   <strong>Coca-Cola</strong>   |   Rede Meridional
-        </StyledSubtitle>
-        <StyledImg src={CocaIcon} alt="Logo da Coca Cola" />
-        <StyledTitle>Coca-Cola</StyledTitle>
-        <StyledSubtitle>
+        </p>
+        <img className={styles.img} src={CocaIcon} alt="Logo da Coca Cola" />
+        <h2 className={styles.title}>Coca-Cola</h2>
+        <p className={styles.subtitle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-        </StyledSubtitle>
-        <ProjectsButton>Conheça todas as cases</ProjectsButton>
-      </Wrapper>
-    </StyledSection>
+        </p>
+        <Button text='Conheça todas as cases' color='white' />
+      </div>
+    </section>
   );
 };
 

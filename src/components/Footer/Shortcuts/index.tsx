@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyledUl, Wrapper, StyledTitle } from './styles';
+import * as styles from './styles.module.scss';
 
 export const Shortcuts = () => {
   return (
-    <Wrapper>
+    <div className={styles.wrapper}>
       <div>
-        <StyledTitle>Produtos</StyledTitle>
-        <StyledUl>
+        <h3 className={styles.title}>Produtos</h3>
+        <ul className={styles.ul}>
           <li>Central de alarme</li>
           <li>Roteadores e Sinalizadores</li>
           <li>Acionadores Manuais</li>
@@ -14,27 +14,27 @@ export const Shortcuts = () => {
           <li>Roteadores de Sinal</li>
           <li>Roteador com Acionador Automático</li>
           <li>Monitores de Alerta</li>
-        </StyledUl>
+        </ul>
       </div>
       <div>
-        <StyledTitle>Nossos projetos</StyledTitle>
-        <StyledUl>
+        <h3 className={styles.title}>Nossos projetos</h3>
+        <ul className={styles.ul}>
           <li>Projeto 1</li>
           <li>Projeto 2</li>
           <li>Projeto 3</li>
           <li>Projeto 4</li>
-        </StyledUl>
+        </ul>
       </div>
       <div>
-        <StyledTitle>A Global Sonic</StyledTitle>
+        <h3 className={styles.title}>A Global Sonic</h3>
       </div>
       <div>
-        <StyledTitle>Dúvidas</StyledTitle>
+        <h3 className={styles.title}>Dúvidas</h3>
       </div>
       <div>
-        <StyledTitle>Contato</StyledTitle>
+        <h3 className={styles.title}>Contato</h3>
       </div>
-    </Wrapper>
+    </div>
   );
 };
 export default Shortcuts;
