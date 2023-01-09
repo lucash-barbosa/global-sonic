@@ -1,0 +1,30 @@
+@import '/src/global/styles/global';
+@import '/src/global/styles/variables';
+@import '/src/pages/Projects/CocaCola/styles.module.scss';
+
+$banner: '../../../assets/images/banco-brasil_banner.png';
+
+.section {
+  @extend .section;
+  background-image: url($banner);
+};
+
+.wrapper {
+  @extend .wrapper;
+};
+
+.title {
+  @extend .title;
+};
+
+.subtitle {
+  @extend .subtitle;
+};
+
+.img {
+  margin: 20px 0 60px auto;
+};
+
+button {
+  width: 269px;
+}

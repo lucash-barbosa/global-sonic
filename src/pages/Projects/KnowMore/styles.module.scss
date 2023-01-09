@@ -1,0 +1,80 @@
+@import '/src/global/styles/global';
+@import '/src/global/styles/variables';
+@import '/src/global/styles/breakpoints';
+@import '/src/components/Button/styles.module.scss';
+
+$banner: '../../../assets/images/more_about-2.png';
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 600px;
+  padding: 70px 0;
+  background-image: url($banner);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper-product {
+  text-align: center;
+  max-width: 900px;
+}
+
+.wrapper-about {
+  text-align: center;
+  width: 35vw;
+
+  @media (max-width: $desktop_sm) {
+    width: 60vw;
+  };
+
+  @media (max-width: $tablet) {
+    width: 80vw;
+  };
+}
+
+.wrapper-buttons {
+  display: flex;
+  column-gap: 3vw;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 30px;
+  color: $white;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: $white;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  margin: 30px 0 40px 0;
+}
+
+.button-contact {
+  @extend .button;
+  width: 50vw;
+  max-width: 245px;
+}
+
+.button-doubt {
+  @extend .button-contact;
+  @extend .onyx;
+}
+
+ 

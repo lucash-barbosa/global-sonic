@@ -1,0 +1,30 @@
+@import '/src/global/styles/global';
+@import '/src/global/styles/variables';
+@import '/src/pages/Projects/Vale/styles.module.scss';
+
+$banner: '../../../assets/images/rede-meridional_banner.png';
+
+.section {
+  @extend .section;
+  background-image: url($banner);
+};
+
+.wrapper {
+  @extend .wrapper;
+};
+
+.title {
+  @extend .title;
+};
+
+.subtitle {
+  @extend .subtitle;
+};
+
+.img {
+  margin: 20px 0 60px 0;
+};
+
+button {
+  width: 245px;
+}
